@@ -37,16 +37,12 @@ namespace Matrix
 
         protected override void SetElement(int i, int j, T value)
         {
-            if (i > 0 && j > 0 && i <= Size && j <= Size)
-                elements[i - 1, j - 1] = value;
-            throw new ArgumentOutOfRangeException();
+            elements[i - 1, j - 1] = value;
         }
 
         protected override T GetElement(int i, int j)
         {
-            if (i > 0 && j > 0 && i <= Size && j <= Size)
-                return elements[i - 1, j - 1];
-            throw new ArgumentOutOfRangeException();
+            return elements[i - 1, j - 1];
         }
     }
 }

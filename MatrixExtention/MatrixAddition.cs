@@ -18,9 +18,7 @@ namespace MatrixExtension
             {
                 for (int i = 1; i <= m1.Size; ++i)
                     for (int j = 1; j <= m1.Size; ++j)
-                    {
-                        m1[i, j] = (dynamic)m1[i, j] + (dynamic)m2[i, j];
-                    }
+                        m1[i, j] = (dynamic)m1[i, j] + m2[i, j];
             }
             catch(RuntimeBinderException e)
             {
